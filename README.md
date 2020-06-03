@@ -28,17 +28,17 @@ CollabOverIdeas is a python powered web app which helps developers to collaborat
 <a name="login-register"></a>
 - ### Login and Register
 Register Page
-![](https://github.com/khushboo1510/collab-over-ideas-images/blob/master/Register.PNG)
+![](https://github.com/khushboo1510/collab-over-ideas/blob/master/snapshots/Register.PNG)
 Login Page
-![](https://github.com/khushboo1510/collab-over-ideas-images/blob/master/Login.PNG)
+![](https://github.com/khushboo1510/collab-over-ideas/blob/master/snapshots/Login.PNG)
 <a name="team"></a>
 - ### Team Creation and Invites
 <a name="task"></a>
 - ### Task Management
 Task View
-![](https://github.com/khushboo1510/collab-over-ideas-images/blob/master/task.PNG)
+![](https://github.com/khushboo1510/collab-over-ideas/blob/master/snapshots/task.PNG)
 Add Task
-![](https://github.com/khushboo1510/collab-over-ideas-images/blob/master/add%20task.PNG)
+![](https://github.com/khushboo1510/collab-over-ideas/blob/master/snapshots/add%20task.PNG)
 <a name="chat"></a>
 - ### Chat Management
 <a name="meeting"></a>
