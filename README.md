@@ -1,4 +1,5 @@
 # Collab-Over-Ideas
+
 CollabOverIdeas is a python powered web app which helps developers to collaborate over an idea or project.
 
 - This app lets a team of developers create a workspace to post ideas. A developer can be a member of one or more workspaces.
