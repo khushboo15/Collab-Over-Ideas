@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+	background: #f3f5f9;
+}
+
+.wrapper{
+	display: flex;
+	position: relative;
+}
+
+.wrapper .sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #3333ff;
+	padding: 10px 0px;
+}
+
+.wrapper .sidebar h2{
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+ 	margin-bottom: 20px;
+}
+ /* for the   */
+.wrapper .sidebar ul li{
+  padding: 15px ;
+  margin-left: -40px;
+  list-style-type: none;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  transition: 0.6s ease;
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.wrapper .sidebar section a{
+	text-align: center;
+	color: black;
+	text-decoration: none;
+
+}
+
+.wrapper .sidebar section li a:target p{
+	display: block;
+}
+
+.wrapper .info li{
+	list-style: none;
+	padding: 20px ;
+	transition: 0.6s ease;
+}
+
+.wrapper .info li a{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+.wrapper .info  li a:hover{
+  color: white;
+
+}
+
+.wrapper .info  li:hover {
+  background-color: #3333ff;
+  font-color:#fff;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 50px;
+}
+.wrapper .sidebar ul li a .far{
+  width: 50px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .header li{
+	float: right;
+	list-style-type: none;
+	
+}
+
+.wrapper .main_content .header li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid #f3f5f9;
+	
+}
+.wrapper .main_content .header li a1{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 20px;
+	border: 1px solid;
+	color: #f3f5f9;
+}
+
+body {
+  
+  max-width: 112em;
+  padding: 1em 0;
+}
+
+.grid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+  
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+}
+
+.module {
+  /* Demo-Specific Styles */
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .module {
+    margin: 50;
+  }
+}
+
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+
+}
+
+.wrapper .main_content .info ul li a:hover{
+	background-color: #594f8d;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+/*- Typograpy and resets -*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*- Card container -*/
+.card-container {
+  position: absolute;
+  z-index: 1;
+  margin: 32px auto;
+  max-width: 720px;
+  height: 420px;
+  perspective: 1000px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*- Card body -*/
+.card-body {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all .7s linear;
+}
+
+/*- Flipping the card -*/
+.card-container:hover .card-body {
+  transform: rotateY(180deg);
+}
+
+.card-container:hover > .card-body > .side-front {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in, visibility .75s linear;
+}
+
+/*- Card sides -*/
+.card-side {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  color: #212121;
+  background-color: #fff;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
+}
+
+/*- Front side -*/
+.side-front [class^=col-xs]:first-of-type {
+  padding-left: 0;
+}
+
+.side-front-content {
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+}
+
+/*- Back side -*/
+.side-back {
+  z-index: 2;
+  padding: 32px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*- Form -*/
+.card-form {
+  margin-top: 32px;
+}
+
+.card-form .row + .row,
+.card-form .row + fieldset,
+.card-form fieldset + fieldset {
+  margin-top: 16px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  width: 100%;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #eee;
+  border-left: 0;
+  
+  &:focus {
+    outline: 0;
+    border-bottom: 1px solid #0c81f6;
+  }
+}
+
+textarea {
+  max-height: 80px;
+  resize: vertical;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #0c81f6;
+  border: none;
+  box-shadow: 0 10px 35px rgba(50,50,93,.1),0 2px 15px rgba(0,0,0,.07);
+  transition: background-color .25s ease-in, box-shadow .25s ease-in;
+  
+  &:focus,
+  &:hover {
+    background-color: lighten(#0c81f6, 15%);
+    box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+  }
+}
+
+/*- Social links -*/
+.social-links {
+  padding: 0;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  
+  li:nth-of-type(n+2) {
+    margin-left: 24px;
+  }
+  
+  a {
+    color: #212121;
+    transition: opacity .25s ease-in;
+    
+    &:focus,
+    &:hover {
+      opacity: .5;
+    }
+  }
+  
+  i {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+html, body {
+  background: #FCEEB5;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.center {
+  position: absolute;
+  top: 505%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.center2 {
+  position: absolute;
+  top: 25%;
+  left: 105%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.center3 {
+  position: absolute;
+  top: 75%;
+  left: 105%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.center4 {
+  position: absolute;
+  top: 25%;
+  left: 105%;
+  -webkit-transform: translate(-50%, -50%);
+}
+.card {
+display: inline-grid;
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#dE685E, #EE786E);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card.green .additional {
+  background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);*/
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card.green .additional .more-info h1 {
+  color: #224C36;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.card.green .additional .coords {
+  color: #325C46;
+
+}
+
+.card .additional .coords span + span {
+  float: right;
+  
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #325C46;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.title1 {
+  font-size: 0.90rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+  top: 25%;
+  padding-top: 25px;
+  height: 30px;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
