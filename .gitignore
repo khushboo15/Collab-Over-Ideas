@@ -1,4 +1,4 @@
-# file: ~/.gitignore_global
-.idea
 
-!/collaboverideas/mysite/db.sqlite3
+.idea
+/collaboverideas/mysite/collaboverideas/interface_debug.log
+/collaboverideas/mysite/db.sqlite3
