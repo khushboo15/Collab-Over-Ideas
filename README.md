@@ -12,13 +12,5 @@ CollabOverIdeas is a python powered web app which helps developers to collaborat
 - Technologies: Django Framework, AngularJs, jQuery HTML5, Bootstrap,SqLite3
 - Tools: PyCharm
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-#Description
-#Core Functionality
-#Screenshots
 
 
